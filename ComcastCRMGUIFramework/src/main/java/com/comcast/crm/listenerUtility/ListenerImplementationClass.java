@@ -25,7 +25,7 @@ public class ListenerImplementationClass implements ITestListener,ISuiteListener
 	
 	public void onStart(ISuite suite)
 	{
-		System.out.println("Report Configuration");
+		System.out.println("Report Configuration...");
 		String time = new Date().toString().replace(" ", "_").replace(":", "_");
 		ExtentSparkReporter spark=new ExtentSparkReporter("./AdvanceReport/report"+time+".html");
 		spark.config().setDocumentTitle("CRM Test Suite Results");
